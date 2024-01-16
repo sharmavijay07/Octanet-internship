@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc8cd74914.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="nav">
+            <div class="nav-left">
+                <img src="Octa-logo.png" >
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#vehicals">Features</a></li>
+                    <li><a href="">Latest</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="heading">
+            <h1 class="first">Stylish, Cool and</h1>
+            <h1 class="second">FASINATE TO GO FOR</h1>
+            <h1 class="third">LONG_DRIVE</h1>
+            <h1 class="fourth">
+                Vintage is for Royals get your dream Car.<br>
+                Royal Pace, Royal Performance, Royal Sound
+            </h1>
+            <button class="button">BOOK & TAKE RIDE</button>
+        </div>
+    </div>
+<!-- ------------Vehicals-------------- -->
+<div id="vehicals">
+    <h1 class="headV">Popular Vehicals</h1>
+    <div class="car-container">
+      <div class="left-car cars" onmousemove="show()"><img src="car3.jpg" class="car3 imgcar">
+    </div>
+      <div class="centre-car cars" onmousemove="show()"><img src="car4.jpg" class="car4 imgcar"></div>
+      <div class="right-car cars" onmousemove="show()"><img src="car1.webp" class="car1 imgcar"></div>
+    </div>
+   
+      </div>
+      
+</div>
+<!-- ----------------contact----------------- -->
+<div id="contact">
+    <div class="container1">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Book a Test Drive</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>vintage@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9555 454 454</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vijay-sharma-2bb4b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin"></i></a>
+               
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="end-photo">
+            <img src="car2.webp" class="car2">
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © VINTAGE. Made with <i class="fas fa-heart"></i> Vintage Co-orporation</p>
+    </div>
+</div>
+
+
+
+<script>
+    let bg = document.querySelector('#header');
+    setInterval(() => {
+        bg.style.backgroundImage = "url(bg-light.jpg)";
+        setTimeout(() => {
+            bg.style.backgroundImage = "url(bg.jpg)";
+        },1000);
+    },2200)
+    let car = document.querySelector('.car2');
+    setInterval(() => {
+        car.src = "car3.jpg";
+        setTimeout(() => {
+            car.src = "car4.jpg";
+        },1000);
+    },2200)
+ 
+  
+  
+</script>
+</body>
+</html>
