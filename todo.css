@@ -1,0 +1,28 @@
+button{
+    background-color:red;
+    border:none;
+    border-radius: 12px;
+    padding:15px 15px;
+}
+#addbutton{
+    background-color: green;
+    border:none;
+    border-radius: 12px;
+    padding:15px 15px;
+}
+pre{
+    background-color:aqua;
+    border:none;
+    border-radius: 15px;
+    
+}
+#todoContainer{
+    background-color:burlywood;
+    width: 380px;
+    border: none;
+    border-radius: 15px;
+       
+}
+body{
+    background-color:bisque;
+}
